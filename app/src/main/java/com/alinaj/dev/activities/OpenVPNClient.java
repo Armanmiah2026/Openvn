@@ -371,7 +371,7 @@ public class OpenVPNClient extends OpenVPNClientBase implements /*OnRequestPermi
     private RewardedAd mRewardedAd;
     private AlertDialog checkingDialog = null;
 
-    private final String auth_api = "https://penel-demo.ggff.net/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s";  // copy panel
+    private final String auth_api = "https://pakhi.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s";  // copy panel
     //  private String auth_api = "https://rktunnelvip.xyz/api/soodeif7ah/auth?username=%s&password=%s&device_id=%s&device_model=%s";  // kobz panel
 
 

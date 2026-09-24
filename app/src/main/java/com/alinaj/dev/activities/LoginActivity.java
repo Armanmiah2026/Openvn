@@ -108,7 +108,7 @@ public class LoginActivity extends OpenVPNClientBase implements OnClickListener 
 
             Toast.makeText(this, "Checking...", Toast.LENGTH_SHORT).show();
 
-            String format = "https://rktunnelvip.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s";
+            String format = "https://pakhi.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s";
 
             format = prefs.getString("auth_api", format);
 

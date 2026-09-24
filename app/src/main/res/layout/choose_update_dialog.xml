@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="320dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@android:color/white">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:background="?colorPrimary"
+		android:padding="20dp">
+
+		<ImageView
+			android:src="@drawable/ic_update_dialog"
+			android:layout_width="88dp"
+			android:layout_height="88dp"
+			android:scaleType="fitXY"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Choose Update"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#FFFFFFFF"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="20dp"
+		android:weightSum="2">
+
+		<RadioGroup
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:id="@+id/update_group">
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"
+				android:text="Online"
+				android:id="@+id/online"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"
+				android:text="Offline"
+				android:id="@+id/offline"/>
+
+		</RadioGroup>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right|center_vertical">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:text="Cancel"
+				android:background="#00000000"
+				android:id="@+id/cancel_update"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:text="Ok"
+				android:background="#00000000"
+				android:id="@+id/ok_update"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

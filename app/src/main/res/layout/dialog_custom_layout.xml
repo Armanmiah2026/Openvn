@@ -1,0 +1,47 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingBottom="64dp"
+   >
+
+
+    <!-- Animation or Image View -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/lotiswitch"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@null"
+        app:lottie_rawRes="@raw/infinity"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <!-- Title -->
+
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Join Us On Telegram?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="We Have A Telegram Support Channel In Which We Post And Discuss About New Settings, New Features And Also Assist Our Beloved Users. \n\nWould You Like To Join Us There?"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

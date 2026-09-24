@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	android:padding="15dp"
+	android:background="#FF000000">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Account Status"
+		android:textColor="?colorPrimary"
+		android:layout_marginBottom="10dp"
+		android:typeface="monospace"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Expiry"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFFFF"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="--//--//--"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/expiration_date"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

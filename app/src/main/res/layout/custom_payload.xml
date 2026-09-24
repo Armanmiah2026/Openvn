@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="20dp">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Input SNI Here"
+			android:textColor="?colorPrimary"
+			android:textSize="12sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="textMultiLine"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/custom_sni_edit"
+			android:hint="www.facebook.com"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Input Payload Here or Generate"
+			android:textColor="?colorPrimary"
+			android:textSize="12sp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="textMultiLine"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_marginBottom="10dp"
+			android:hint="@string/payload_hint"
+			android:id="@+id/custom_payload_edit"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Cancel"
+				android:background="#00000000"
+				android:id="@+id/custom_payload_cancel"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SAVE"
+				android:background="#00000000"
+				android:id="@+id/custom_payload_save"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="GENERATE"
+				android:background="#00000000"
+				android:id="@+id/custom_payload_generate"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

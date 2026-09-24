@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="?colorAccent"
+		android:gravity="center_vertical">
+
+		<View
+			android:background="@drawable/ic_generator"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_marginLeft="10dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Custom"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="10dp"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:layout_weight="1.0"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="ADVANCE"
+			android:foreground="?attr/selectableItemBackground"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="10dp"
+			android:textColor="#FFFFFF"
+			android:layout_marginRight="10dp"
+			android:textStyle="bold"
+			android:id="@+id/custom_btn_advance"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Custom Payload"
+			android:textColor="?colorAccent"
+			android:typeface="serif"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="textMultiLine"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_marginBottom="10dp"
+			android:hint="@string/payload_hint"
+			android:id="@+id/custom_payload_input"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Cancel"
+			android:textColor="?colorPrimary"
+			android:background="#00000000"
+			android:id="@+id/custom_btn_cancel"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="?colorPrimary"
+			android:text="SAVE"
+			android:background="#00000000"
+			android:id="@+id/custom_btn_save"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

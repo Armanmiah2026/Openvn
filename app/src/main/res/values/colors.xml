@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="file_dialog_gray">@color/bottomnavigation_bg</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="primary_color">#FF5722</color>                      <!-- change Apps color -->
+    <color name="primaryDark_color">#FF5722</color>
+    <color name="accent_color">#FF5722</color>
+    <color name="accent_color2">#FF5722</color>
+    <color name="graph_color">#D102FF</color>   <!-- change graph color -->
+    <color name="bottomnavigation_bg">#FF0000</color>
+    <color name="bottomnavigation_icon_tint">#ffffffff</color>
+    <color name="main_accent">#FF5722</color>
+    <color name="connect_color">#009B06</color>      <!-- change DISCONNECTED TEXT color -->
+    <color name="main_bg_color">#AAC5EF</color>
+    <color name="connectedcolor">#009B06</color>     <!-- change Connected text color -->
+    <color name="red">#e91d62</color>
+
+    <color name="jx_accountBg">#ffffffff</color>
+    <color name="jx_accountText">#000000</color>
+    <color name="jx_all_btn">#000000</color>
+    <color name="jx_appName">#ffffffff</color>
+    <color name="jx_bg_icon">@color/primary_color</color>
+    <color name="jx_border">@color/primary_color</color>
+    <color name="jx_borderText">@color/primary_color</color>
+    <color name="jx_border_bg">#00000000</color>
+    <color name="jx_bottom_nav">@color/connect_color</color>
+    <color name="jx_btnEnd">#ffffffff</color>
+    <color name="jx_btnEnd1">#ffffffff</color>
+    <color name="jx_btnStart">#ffffffff</color>
+    <color name="jx_btnStart1">#ffffffff</color>
+    <color name="jx_card_bg">#ffffffff</color>
+    <color name="jx_color">#000000</color>
+    <color name="jx_corner_shadow">#000000</color>
+    <color name="jx_dialog_border">#ffffffff</color>
+    <color name="jx_dialog_color">#ffffffff</color>
+    <color name="jx_graphText">#000000</color>
+    <color name="jx_icon">@color/primary_color</color>
+    <color name="jx_iconAccount">#ffffffff</color>
+    <color name="jx_iconMoreOptions">#000000</color>
+    <color name="jx_iconTitleBar">#ffffffff</color>
+    <color name="jx_icon_graph">@color/primary_color</color>
+    <color name="jx_logo">#000000</color>
+    <color name="jx_logoAccount">#ffffffff</color>
+    <color name="jx_logoMoreOptions">#ffffffff</color>
+    <color name="jx_logs">@color/primary_color</color>
+    <color name="jx_mainBg">#000000</color>
+    <color name="jx_mainLayoutColor">@color/primary_color</color>
+    <color name="jx_moreOptionsBg">#ffffffff</color>
+    <color name="jx_shapeEnd">#cfd8dc</color>
+    <color name="jx_shapeStart">#ffffff</color>
+    <color name="jx_side_nav">#000000</color>
+    <color name="jx_spinBg">#00000000</color>
+    <color name="jx_spinMainText">#000000</color>
+    <color name="jx_spinSubText">@color/primary_color</color>
+    <color name="jx_start">#000000</color>
+    <color name="jx_start_bg">@color/bottomnavigation_bg</color>
+    <color name="jx_start_bg2">#ffffffff</color>
+    <color name="jx_statusText">@color/primary_color</color>
+    <color name="jx_stop">#000000</color>
+    <color name="jx_stop_bg">@color/connect_color</color>
+    <color name="jx_subName">@color/primary_color</color>
+    <color name="jx_subText">#000000</color>
+    <color name="jx_swcbtnBg">#ffffffff</color>
+    <color name="jx_swcbtnCircle">@color/primary_color</color>
+    <color name="jx_text_color">#000000</color>
+    <color name="jx_textdialog_color">@color/connect_color</color>
+    <color name="jx_titlebar_icon">@color/connect_color</color>
+    <color name="jx_transparent">#00000000</color>
+    <color name="jx_tweaks_radio">#000000</color>
+    <color name="ring_circle">#F44336</color>
+    <color name="red_btn_bg_color">@color/bottomnavigation_bg</color>
+    <color name="colorBtnDarkGreen">@color/connect_color</color>
+    <color name="colorBtnStroke">@color/bottomnavigation_bg</color>
+    <color name="getting_started">@color/bottomnavigation_bg</color>     <!-- change Getting Started text color -->
+
+
+
+    <color name="primary">@color/accent</color>      <!--500-->
+    <color name="primary_dark">@color/accent</color> <!--700-->
+    <color name="accent">@color/primary_color</color>       <!-- Orange 400 -->
+    <color name="boarders">@color/accent</color>
+    <color name="dataOut">@color/accent</color>
+
+
+
+</resources>

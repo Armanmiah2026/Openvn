@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="WATCH VIDEO AD TO GET 3 HOURS\n\nWatching ads helps us grow and continue providing a high-quality VPN service for free. By watching ads, you can support us without spending any money, and help us improve and expand our app"
+        android:textColor="@android:color/black"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rk_colour"
+        android:backgroundTint="@null"
+        android:text="WATCH VIDEO AD"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

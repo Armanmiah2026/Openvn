@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "988402402522",
+    "project_id": "notification-api-v1",
+    "storage_bucket": "notification-api-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988402402522:android:7b9585b24692e7ac7f51e3",
+        "android_client_info": {
+          "package_name": "com.alinaj.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxD_fLZCEWW-7VMbAS3UTf2YtOyzaqPm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

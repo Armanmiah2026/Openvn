@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#001331">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:src="@drawable/ic_launcher"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_gravity="center"
+			android:layout_margin="25dp"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="20dp">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/user_icon_bg">
+
+						<ImageView
+							android:src="@drawable/ic_user"
+							android:layout_width="25dp"
+							android:layout_height="25dp"
+							android:layout_margin="10dp"
+							app:tint="#ffffff" />
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/user_pass_holder_bg">
+
+						<EditText
+							android:layout_width="match_parent"
+							android:inputType="textEmailAddress"
+							android:layout_height="45dp"
+							android:ems="10"
+							android:id="@+id/login_username"
+							android:hint="Username"
+							android:background="#00000000"
+							android:paddingLeft="10dp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="15dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/user_icon_bg">
+
+						<ImageView
+							android:src="@drawable/ic_password"
+							android:tint="#ffffff"
+							android:layout_width="25dp"
+							android:layout_height="25dp"
+							android:layout_margin="10dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/user_pass_holder_bg">
+
+						<com.alinaj.dev.view.MaterialEditText
+							app:tint_color="?colorPrimary"
+							android:layout_width="match_parent"
+							android:inputType="textPassword"
+							android:layout_height="45dp"
+							android:hint="Password"
+							android:ems="10"
+							android:id="@+id/login_password"
+							android:background="#00000000"
+							android:paddingLeft="10dp"
+							android:paddingRight="10dp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Login"
+				android:textColor="#FFFFFFFF"
+				android:id="@+id/login_button"
+				android:background="@drawable/button_disconnect"
+				android:typeface="serif"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

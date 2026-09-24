@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="15dp"
+	android:background="#FF000000">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Resource Update"
+		android:textStyle="bold"
+		android:typeface="monospace"
+		android:textColor="?colorPrimary"
+		android:layout_marginBottom="15dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="RESOURCE"
+				android:textColor="?colorPrimary"
+				android:textStyle="bold"
+				android:typeface="monospace"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SERVERS"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="APK"
+				android:textColor="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="?colorPrimary"
+				android:text="VERSION"
+				android:typeface="monospace"
+				android:textStyle="bold"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1.0.0"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="10dp"
+				android:id="@+id/server_version"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1.0"
+				android:textColor="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="?colorPrimary"
+				android:text="UPDATED"
+				android:typeface="monospace"
+				android:textStyle="bold"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="YES"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="YES"
+				android:textColor="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="CHECK UPDATES"
+		android:background="@drawable/button_connect"
+		android:textColor="#FFFFFFFF"
+		android:id="@+id/check_update_btn"
+		android:layout_marginBottom="10dp"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="OFFLINE UPDATE"
+		android:background="@drawable/button_connect"
+		android:textColor="#FFFFFFFF"
+		android:id="@+id/offline_update_btn"/>
+
+</LinearLayout>
+

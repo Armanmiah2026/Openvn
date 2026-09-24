@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_right_side_padding_top">2.0dip</dimen>
+    <dimen name="notification_content_margin_start">8.0dip</dimen>
+    <dimen name="notification_main_column_padding_top">10.0dip</dimen>
+    <item name="notification_media_narrow_margin" type="dimen">
+        @dimen/notification_content_margin_start
+    </item>
+    <dimen name="compat_button_inset_horizontal_material">4.0dip</dimen>
+    <dimen name="compat_button_inset_vertical_material">6.0dip</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8.0dip</dimen>
+    <dimen name="compat_button_padding_vertical_material">4.0dip</dimen>
+    <dimen name="compat_control_corner_material">2.0dip</dimen>
+    <dimen name="notification_action_icon_size">32.0dip</dimen>
+    <dimen name="notification_action_text_size">13.0sp</dimen>
+    <dimen name="notification_big_circle_margin">12.0dip</dimen>
+    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_large_icon_width">64.0dip</dimen>
+    <dimen name="notification_right_icon_size">16.0dip</dimen>
+    <dimen name="notification_small_icon_background_padding">3.0dip</dimen>
+    <dimen name="notification_small_icon_size_as_large">24.0dip</dimen>
+    <dimen name="notification_subtext_size">13.0sp</dimen>
+    <dimen name="notification_top_pad">10.0dip</dimen>
+    <dimen name="notification_top_pad_large_text">5.0dip</dimen>
+    <dimen name="value10">10dp</dimen>
+    <dimen name="value100">100dp</dimen>
+    <dimen name="value12">12dp</dimen>
+    <dimen name="value120">120dp</dimen>
+    <dimen name="value130">130dp</dimen>
+    <dimen name="value140">140dp</dimen>
+    <dimen name="value15">15dp</dimen>
+    <dimen name="value16">16dp</dimen>
+    <dimen name="value160">160dp</dimen>
+    <dimen name="value18">18dp</dimen>
+    <dimen name="value2">2dp</dimen>
+    <dimen name="value20">20dp</dimen>
+    <dimen name="value200">200dp</dimen>
+    <dimen name="value25">25dp</dimen>
+    <dimen name="value3">3dp</dimen>
+    <dimen name="value30">30dp</dimen>
+    <dimen name="value36">36dp</dimen>
+    <dimen name="value4">4dp</dimen>
+    <dimen name="value40">40dp</dimen>
+    <dimen name="value44">44dp</dimen>
+    <dimen name="value48">48dp</dimen>
+    <dimen name="value5">5dp</dimen>
+    <dimen name="value50">50dp</dimen>
+    <dimen name="value55">55dp</dimen>
+    <dimen name="value60">60dp</dimen>
+    <dimen name="value7">7dp</dimen>
+    <dimen name="value70">70dp</dimen>
+    <dimen name="value8">8dp</dimen>
+    <dimen name="value80">80dp</dimen>
+</resources>

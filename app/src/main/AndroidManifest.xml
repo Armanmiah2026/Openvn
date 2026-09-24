@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name="com.alinaj.dev.activities.OpenVPNApplication"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/ic_launcher"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AliNajDemo"
+        android:usesCleartextTraffic="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.alinaj.dev.service.OpenVPNService"
+            android:exported="true"
+            android:foregroundServiceType="systemExempted"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            tools:ignore="ForegroundServicePermission">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.service.InjectorService"
+            android:exported="true" />
+        <service
+            android:name="com.alinaj.dev.service.SocksDNSService"
+            android:exported="true"
+            android:foregroundServiceType="systemExempted"
+            tools:ignore="ForegroundServicePermission" />
+
+        <activity
+            android:name="com.alinaj.dev.activities.SpashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.alinaj.dev.core.MainReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alinaj.dev.vpn.core.MainReceiver.ACTION_SERVICE_STOP"></action>
+                <action android:name="com.alinaj.dev.vpn.core.MainReceiver.ACTION_SERVICE_RESTART"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.alinaj.dev.activities.OpenVPNClient"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.alinaj.dev.activities.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.alinaj.dev.activities.SelectNetworkActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <receiver
+            android:name="net.openvpn.openvpn.OpenVPNRebootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.alinaj.dev.activities.OpenVPNPrefs"
+            android:exported="true" />
+
+        <activity
+            android:name="com.alinaj.dev.activities.FileDialog"
+            android:exported="true" />
+        <activity
+            android:name="com.alinaj.dev.activities.OpenVPNAbout"
+            android:exported="true" />
+        <activity
+            android:name="com.alinaj.dev.activities.OpenVPNDisconnect"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="com.alinaj.dev.activities.LogActivity"
+            android:exported="true"
+            android:label="Logs"
+            android:parentActivityName="com.alinaj.dev.activities.OpenVPNClient" />
+        <activity
+            android:name="com.alinaj.dev.activities.ExceptionActivity"
+            android:exported="true"
+            android:label="Application Error" />
+        <activity
+            android:name="com.alinaj.dev.activities.PrivacyActivity"
+            android:exported="true"
+            android:parentActivityName="com.alinaj.dev.activities.OpenVPNClient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.alinaj.dev.activities.ResellerPanelActivity"
+            android:exported="true"
+            android:label="Panel"
+            android:parentActivityName="com.alinaj.dev.activities.OpenVPNClient" />
+        <activity
+            android:name="com.alinaj.dev.openconnect.api.GrantPermissionsActivity"
+            android:exported="true"
+            android:permission="app.openconnect.REMOTE_API">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alinaj.dev.openconnect.api.ConfirmDialog"
+            android:exported="true"
+            android:permission="${applicationId}.REMOTE_API">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.alinaj.dev.service.vpn.TunnelVpnService"
+            android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.v2ray.services.V2rayVPNService"
+            android:exported="false"
+            android:foregroundServiceType="systemExempted"
+            android:label="@string/app"
+            android:process=":RunSoLibV2RayDaemon"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            tools:ignore="ForegroundServicePermission">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+                android:value="true" />
+        </service>
+        <service
+            android:name="com.alinaj.dev.psiphon.PsiphonVPNService"
+            android:exported="false"
+            android:foregroundServiceType="systemExempted"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            tools:ignore="ForegroundServicePermission">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.openconnect.core.OpenVpnService"
+            android:exported="true"
+            android:foregroundServiceType="systemExempted"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            tools:ignore="ForegroundServicePermission">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.service.SSHService"
+            android:exported="true"
+            android:foregroundServiceType="systemExempted"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            tools:ignore="ForegroundServicePermission">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alinaj.dev.service.TimerService"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="@string/explanation_for_timer_service" />
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fcm_default_channel" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4594501800071173~3940372053" />
+    </application>
+
+</manifest>

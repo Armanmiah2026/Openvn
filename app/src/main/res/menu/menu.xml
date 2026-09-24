@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:id="@+id/about_menu"
+        android:title="@string/about_menu" />
+	<item
+		android:title="Updates"
+		android:id="@+id/menu_updates"/>
+
+	<item android:id="@+id/import_profile"
+		android:title="Import Config"/>
+
+	<item android:id="@+id/show_log" 
+		android:title="@string/show_log"
+        android:visible="false"/>
+
+	<item android:id="@+id/exit_partial"
+		android:title="@string/exit_partial" />
+
+    <item
+        android:id="@+id/a_tweaks"
+        android:enabled="true"
+        android:icon="@drawable/ic_telegram"
+        android:title="Telegram"
+        app:showAsAction="always" />
+
+</menu>

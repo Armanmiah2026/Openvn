@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none">
+
+		<RadioGroup
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/networks_tweak_group"
+			android:padding="15dp"
+			android:background="?colorPrimary">
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="All Tweaks"
+				android:button="@null"
+				android:textSize="12sp"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton1"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Mobily"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:textSize="12sp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton2"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="Zain"
+				android:textSize="12sp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton3"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="STC"
+				android:textSize="12sp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton4"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="UAE"
+				android:textSize="12sp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton5"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="Qatar"
+				android:textSize="12sp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/networkdialogRadioButton8"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="Oman"
+				android:textSize="12sp"
+				android:id="@+id/networkdialogRadioButton6"
+				android:layout_marginRight="10dp"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="KSA"
+				android:textSize="12sp"
+				android:id="@+id/networkdialogRadioButton7"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/radio_button_tweak_bg_selector"
+				android:button="@null"
+				android:text="BD"
+				android:textSize="12sp"
+				android:id="@+id/networkdialogRadioButton9"/>
+
+		</RadioGroup>
+
+	</HorizontalScrollView>
+
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@null"
+		android:id="@+id/network_list_dialog"/>
+
+</LinearLayout>
+

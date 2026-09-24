@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="15dp"
+	android:gravity="center_vertical"
+	android:background="#FF000000">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Options"
+		android:textColor="?colorPrimary"
+		android:layout_marginBottom="15dp"
+		android:typeface="monospace"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:layout_marginBottom="15dp"
+		android:id="@+id/web_panel_btn"
+		android:visibility="gone">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="10dp"
+			android:tint="?colorPrimary"
+			android:src="@drawable/ic_web"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Web Panel"
+				android:textColor="?colorPrimary"
+				android:textStyle="bold"
+				android:typeface="monospace"
+				android:layout_marginBottom="5dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="https://ushaurmi.xyz/"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="5dp"/>
+
+			<View
+				android:background="?colorPrimary"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="5dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:layout_marginBottom="15dp"
+		android:id="@+id/logs_btn">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="10dp"
+			android:tint="?colorPrimary"
+			android:src="@drawable/ic_info"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Logs"
+				android:textColor="?colorPrimary"
+				android:textStyle="bold"
+				android:typeface="monospace"
+				android:layout_marginBottom="5dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="View Logs"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="5dp"/>
+
+			<View
+				android:background="?colorPrimary"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="5dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:id="@+id/clear_data_btn">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="10dp"
+			android:tint="?colorPrimary"
+			android:src="@drawable/ic_delete"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Clear Data"
+				android:textColor="?colorPrimary"
+				android:textStyle="bold"
+				android:typeface="monospace"
+				android:layout_marginBottom="5dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="This option will clear the app data and will close automatically"
+				android:textColor="#FFFFFFFF"
+				android:layout_marginBottom="5dp"/>
+
+			<View
+				android:background="?colorPrimary"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:paddingBottom="5dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

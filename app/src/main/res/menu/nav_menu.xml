@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/a_update"
+        android:enabled="true"
+        android:icon="@drawable/ic_box_download"
+        android:title="UPDATE"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/a_tweaks"
+        android:enabled="true"
+        android:icon="@drawable/ic_telegram"
+        android:title="Telegram"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/a_exit"
+        android:enabled="true"
+        android:icon="@drawable/exit"
+        android:title="EXIT"
+        app:showAsAction="always" />
+</menu>

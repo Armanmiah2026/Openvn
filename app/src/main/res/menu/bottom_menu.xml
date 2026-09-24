@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+        android:id="@+id/menu_offline_update"
+        android:title="Offline Update"/>
+    <item
+        android:id="@+id/menu_clear_data"
+        android:title="Clear Data"/>
+	<item
+        android:id="@+id/menu_add_tweak"
+        android:title="Add Tweak"/>
+
+</menu>
